@@ -1,5 +1,100 @@
 *{
     padding: 0;
+  margin : 0;
+    box-sizing: border-box;
+}
+div{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 300px;
+    letter-spacing: -40px;
+}
+.e,.l{
+    position: relative;
+}
+.e::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 59px;
+    right: -15px;
+    background-color: rgb(210, 153, 30);
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-name: dalia1;
+}
+.l::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: 66px;
+    right: -25px;
+    background-color: black;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-name: dalia2; 
+}
+@keyframes dalia1 {
+    11%{
+        top: 59px;
+        right: 115px;
+    }
+    22%{
+        top: 150px;
+        right: 115px;
+    }
+    33%{
+        top: 150px;
+        right: -15px;
+    }
+    44%{
+        top: 150px;
+        right: 115px;
+    }
+    55%{
+        top: 250px;
+        right: 115px;
+    }
+    66%{
+        top: 250px;
+        right: -15px;
+    }
+    77%{
+        top: 250px;
+        right: 115px;
+    }
+    88%{
+        top: 59px;
+        right: 115px;
+    }
+    100%{
+        top: 59px;
+        right: -15px;
+    }
+}
+@keyframes dalia2 {
+    25%{
+        background-color: rgb(210, 153, 30);
+    }
+    50%{
+        bottom: 66px;
+        right: 80px;
+    }
+    75%{
+        bottom: 250px;
+        right: 80px;
+        background-color: rgb(210, 153, 30);
+    }
+    100%{
+        background-color: black;        
+        bottom: 250px;
+        right: 80px;
+    }
 }
 
 body {
